@@ -1,183 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Durga Rijal - Architectural Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom Styles */
-        body {
-            font-family: sans-serif;
-            background-color: #f8f9fa; /* Light grey background */
-            color: #343a40; /* Dark grey text */
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 960px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff; /* White content area */
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #007bff; /* Primary blue color */
-            margin-bottom: 5px;
-        }
-        header p {
-            font-size: 1rem;
-            color: #6c757d; /* Secondary grey color */
-        }
-        .about {
-            margin-bottom: 30px;
-        }
-        .about h2 {
-            font-size: 1.75rem;
-            color: #28a745; /* Success green color */
-            margin-bottom: 15px;
-            border-bottom: 2px solid #28a745;
-            padding-bottom: 5px;
-        }
-        .portfolio {
-            margin-bottom: 30px;
-        }
-        .portfolio h2 {
-            font-size: 1.75rem;
-            color: #ffc107; /* Warning yellow color */
-            margin-bottom: 15px;
-            border-bottom: 2px solid #ffc107;
-            padding-bottom: 5px;
-        }
-        .portfolio-item {
-            margin-bottom: 20px;
-            border: 1px solid #dee2e6; /* Light grey border */
-            border-radius: 6px;
-            overflow: hidden;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .portfolio-item-details {
-            padding: 15px;
-            background-color: #f8f9fa;
-        }
-        .portfolio-item-details h3 {
-            font-size: 1.25rem;
-            margin-bottom: 5px;
-            color: #343a40;
-        }
-        .contact {
-            text-align: center;
-        }
-        .contact h2 {
-            font-size: 1.75rem;
-            color: #dc3545; /* Danger red color */
-            margin-bottom: 15px;
-            border-bottom: 2px solid #dc3545;
-            padding-bottom: 5px;
-        }
-        .contact a {
-            color: #007bff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #dee2e6;
-            color: #6c757d;
-            font-size: 0.9rem;
-        }
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Minimal Image Styling (Optional - Add your project images) */
-        .portfolio-item img {
-            transition: transform 0.3s ease-in-out;
-        }
-        .portfolio-item:hover img {
-            transform: scale(1.05);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coming Soon | Durga Rijal</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d47a1, #42a5f5);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    p.subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      color: #bbdefb;
+    }
+    .countdown {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .countdown-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 80px;
+    }
+    .countdown-item h2 {
+      font-size: 2.5rem;
+    }
+    .countdown-item span {
+      display: block;
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: #e3f2fd;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 15px;
+      transition: transform 0.2s, color 0.2s;
+    }
+    .social-icons a:hover {
+      color: #ffd54f;
+      transform: scale(1.2);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #e3f2fd;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Durga Rijal</h1>
-            <p>Architecture student From Nepal</p>
-        </header>
 
-        <section class="about" id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Durga Rijal, an architecture student from the beautiful country of Nepal. I am passionate about creating thoughtful and innovative designs that blend functionality with aesthetics. Currently, I am focused on honing my skills in both residential and commercial architecture.</p>
-            <p>As mentioned in my description, I am also here to support your journey towards mastering technology and achieving career success. While my portfolio focuses on architecture, I believe in the power of continuous learning and growth in all fields.</p>
-        </section>
+  <h1>Coming Soon</h1>
+  <p class="subtitle">Durga Rijal's new site will launch on October 29, 2025</p>
 
-        <section class="portfolio" id="portfolio">
-            <h2>What I Offer</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/600x400/f0f8ff/808080?Text=Residential+Design" alt="Residential Design">
-                        <div class="portfolio-item-details">
-                            <h3>Residential Design</h3>
-                            <p>Creating comfortable, functional, and aesthetically pleasing living spaces tailored to individual needs.</p>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/600x400/e0ffff/808080?Text=Commercial+Design" alt="Commercial Design">
-                        <div class="portfolio-item-details">
-                            <h3>Commercial Design</h3>
-                            <p>Developing innovative and efficient commercial spaces that meet business objectives and enhance user experience.</p>
-                            </div>
-                    </div>
-                </div>
-                </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2>Contact</h2>
-            <p>Feel free to reach out!</p>
-            <div>
-                <a href="https://www.facebook.com/roshan7rijal" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="mailto:durga7rijal@gmail.com">Email</a>
-            </div>
-        </section>
+  <div class="countdown" id="countdown">
+    <div class="countdown-item">
+      <h2 id="days">--</h2>
+      <span>Days</span>
     </div>
+    <div class="countdown-item">
+      <h2 id="hours">--</h2>
+      <span>Hours</span>
+    </div>
+    <div class="countdown-item">
+      <h2 id="minutes">--</h2>
+      <span>Minutes</span>
+    </div>
+    <div class="countdown-item">
+      <h2 id="seconds">--</h2>
+      <span>Seconds</span>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Durga Rijal. All rights reserved.</p>
-        <p>Located in Damak, Koshi Province, Nepal.</p>
-    </footer>
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/roshan.rizal.731" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/roshanrijal7" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:durga7rijal@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Optional: Add some simple JavaScript for smoother navigation if you add a navbar
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+  <footer>© 2025 Durga Rijal. All rights reserved.</footer>
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+  <script>
+    const countdown = () => {
+      const targetDate = new Date("2025-10-29T00:00:00").getTime();
+      const now = new Date().getTime();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        document.getElementById("countdown").innerHTML = "<h2>The site is now live!</h2>";
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent = hours;
+      document.getElementById("minutes").textContent = minutes;
+      document.getElementById("seconds").textContent = seconds;
+    };
+
+    countdown(); // initial call
+    setInterval(countdown, 1000); // update every second
+  </script>
 </body>
 </html>
+
